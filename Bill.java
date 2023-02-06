@@ -11,6 +11,10 @@ public class Bill
 	private double totalCost;
 	private int totalWidth;
 	
+	/***
+	 * Creates the Bill, and prints it to the console.
+	 * @param teBetalenKasten
+	 */
 	public void Bon(ArrayList<Kasten> teBetalenKasten)
 	{
 		System.out.println();
@@ -25,8 +29,8 @@ public class Bill
 		
 		System.out.println("====================================");
 		
-		System.out.printf("De totale breedte is: " + "%d" +"cm \n" , totalWidth);
-		System.out.printf("Het totaal bedrag is: " + "€%f \n"  , totalCost);
+		System.out.printf("De totale breedte is: " + "%d" +"cm %n" , totalWidth);
+		System.out.printf("Het totaal bedrag is: " + "€%.2f %n"  , totalCost);
 		
 		System.out.println("====================================");
 		System.out.println();
