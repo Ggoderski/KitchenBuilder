@@ -31,6 +31,8 @@ public class KitchenBuilder {
         
         Bill afrekenBon = new Bill();
         afrekenBon.Bon(gekozenKasten);
+        
+        System.exit(0);
     }
 
     private void displayMenu() {

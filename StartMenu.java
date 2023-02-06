@@ -15,9 +15,10 @@ public class StartMenu {
 
             if (choice == 1) {
                 kitchenBuilder.addKasten();
-                
-
-            }
+            } else {
+            	System.out.println("");
+            	System.out.println("Tot de volgende keer!");
+              }
         }
     }
 }

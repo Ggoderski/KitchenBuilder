@@ -17,8 +17,12 @@ public class Bill
 	 */
 	public void Bon(ArrayList<Kasten> teBetalenKasten)
 	{
+		
 		System.out.println();
+		System.out.println("KingGiddie's Kitchen Builder");
+		System.out.println("====================================");
 		System.out.println("U heeft de volgende items gekozen: ");
+		System.out.println("====================================");
 		
 		for(Kasten s: teBetalenKasten)
 		{
@@ -33,6 +37,7 @@ public class Bill
 		System.out.printf("Het totaal bedrag is: " + "€%.2f %n"  , totalCost);
 		
 		System.out.println("====================================");
+		System.out.println("Veel plezier met uw nieuwe keuken en tot de volgende keer");
 		System.out.println();
 		
 	}
