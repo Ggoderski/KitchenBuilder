@@ -15,7 +15,8 @@ public class StartMenu {
 
             if (choice == 1) {
                 kitchenBuilder.addKasten();
-               
+                
+
             }
         }
     }
