@@ -20,10 +20,28 @@ public class KitchenBuilder {
     public void addKasten() {
         int keuze = 1;
 
-        while (keuze != 0) {
-            displayMenu();
-            keuze = sc.nextInt();
+        System.out.println("");
+        System.out.println("Dit zijn alle kasten die wij in assortiment hebben:");
+        System.out.println("|");
 
+        for (int i = 0; i < beschikbareKasten.length; i++) {
+            System.out.println((i + 1) + ". " + beschikbareKasten[i].getName()+ " (" + beschikbareKasten[i].getWidth() + "cm)");
+        }
+
+        System.out.println("0. Je wilt afrekenen");
+        System.out.println("|");
+        System.out.println("Maak je keuze!");
+        System.out.println("");
+        
+
+        while (keuze != 0) {
+        	
+            for (int i = 0; i < gekozenKasten.size(); i++) {
+              System.out.println(gekozenKasten.get(i).getName());
+            }
+
+            keuze = sc.nextInt();
+            System.out.println("Je hebt tot nu toe de volgende kasten gekozen:");
             if (keuze > 0 && keuze <= beschikbareKasten.length) {
                 gekozenKasten.add(beschikbareKasten[keuze - 1]);
             }
@@ -35,7 +53,7 @@ public class KitchenBuilder {
         System.exit(0);
     }
 
-    private void displayMenu() {
+   /* private void displayMenu() {
         System.out.println("");
     	System.out.println("Dit zijn alle kasten die wij in assortiment hebben:");
     	System.out.println("|");
@@ -52,13 +70,13 @@ public class KitchenBuilder {
         for (int i = 0; i < gekozenKasten.size(); i++) {
           System.out.println(gekozenKasten.get(i).getName());
         }
-        
+        */
     }
     
     
     
-    
+ 
 
-}
+
 	    
 
