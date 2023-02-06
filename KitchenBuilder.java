@@ -28,6 +28,9 @@ public class KitchenBuilder {
                 gekozenKasten.add(beschikbareKasten[keuze - 1]);
             }
         }
+        
+        Bill afrekenBon = new Bill();
+        afrekenBon.Bon(gekozenKasten);
     }
 
     private void displayMenu() {
@@ -49,6 +52,7 @@ public class KitchenBuilder {
         }
         
     }
+    
     
     
     
